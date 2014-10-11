@@ -43,11 +43,11 @@ $(function(){
     <ul>
     <li><span><img src="./resources/images/help.png" title="帮助"  class="helpimg"/></span><a href="#">帮助</a></li>
     <li><a href="#">关于</a></li>
-    <li><a href="login.html" target="_parent">退出</a></li>
+    <li><a href="<%= basePath %>TopServlet.do?type=logout" target="_parent">退出</a></li>
     </ul>
      
     <div class="user">
-    <span>admin</span>
+    <span>${username}</span>
     <i>消息</i>
     <b>5</b>
     </div>    

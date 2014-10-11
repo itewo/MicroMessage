@@ -44,6 +44,8 @@ public class LoginServlet extends HttpServlet {
 				if(flag){  
 						//设置Session
 						request.getSession().setAttribute("username", username);
+						//向页面返回值
+						request.setAttribute("username",username);
 						//跳转到指定的页面
 						request.getRequestDispatcher("/WEB-INF/jsp/main.jsp").forward(request, response);
 					}else{

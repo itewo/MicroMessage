@@ -57,6 +57,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>TopServlet</servlet-name>
-    <url-pattern>/TopServlet</url-pattern>
+    <url-pattern>/TopServlet.do</url-pattern>
   </servlet-mapping>
 </web-app>
