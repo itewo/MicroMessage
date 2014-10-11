@@ -3,6 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%  String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    Object userName =session.getAttribute("username");
+    double number =Math.random()*100;
 %>  
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -44,8 +46,8 @@ $(function(){
     <span><img src="./resources/images/leftico01.png" /></span>管理信息
     </div>
     	<ul class="menuson">
-        <li><cite></cite><a href="index.html" target="rightFrame">首页模版</a><i></i></li>
-        <li class="active"><cite></cite><a href="right.html" target="rightFrame">数据列表</a><i></i></li>
+        <li class="active"><cite></cite><a href="index.html" target="rightFrame">首页</a><i></i></li>
+        <li><cite></cite><a href="<%= basePath %>LeftServlet.do?type=datalist&username=<%=userName %>&random=<%=number %>" target="rightFrame">数据列表</a><i></i></li>
         <li><cite></cite><a href="imgtable.html" target="rightFrame">图片数据表</a><i></i></li>
         <li><cite></cite><a href="form.html" target="rightFrame">添加编辑</a><i></i></li>
         <li><cite></cite><a href="imglist.html" target="rightFrame">图片列表</a><i></i></li>

@@ -59,4 +59,14 @@
     <servlet-name>TopServlet</servlet-name>
     <url-pattern>/TopServlet.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LeftServlet</display-name>
+    <servlet-name>LeftServlet</servlet-name>
+    <servlet-class>com.itewo.servlet.LeftServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LeftServlet</servlet-name>
+    <url-pattern>/LeftServlet.do</url-pattern>
+  </servlet-mapping>
 </web-app>

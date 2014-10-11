@@ -15,9 +15,9 @@
 	<body style="background: #e1e9eb;">
 		<form action="<%=basePath %>List.do"  id="mainForm" method="post">
 			<div class="right">
-				<div class="current">当前位置：<a href="javascript:void(0)" style="color:#6E6E6E;">内容管理</a> &gt; 内容列表</div>
+				<div  style="margin-left:10px;" class="current">当前位置：<a href="javascript:void(0)" style="color:#6E6E6E;">管理信息</a> &gt; 数据列表</div>
 				<div class="rightCont">
-					<p class="g_title fix">内容列表 <a class="btn03" href="#">新 增</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn03" href="#">删 除</a></p>
+					<p class="g_title fix">数据列表 <a class="btn03" href="#">新 增</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn03" href="#">删 除</a></p>
 					<table class="tab1">
 						<tbody>
 							<tr>
